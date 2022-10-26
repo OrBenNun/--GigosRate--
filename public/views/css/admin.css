@@ -1,0 +1,258 @@
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+
+}
+.statistics{
+    padding-top: 5%;
+    height: 100vh;
+    min-height: 750px;
+    width: 80%;
+
+}
+.chartSelction{
+    display: flex;
+    flex-flow: row;
+    color: white;
+    margin-left: 8%;
+}
+.selectedChartOption{
+    padding: 15px;
+    border: 1px solid black;
+    color: #47b5df;
+    background-color: white;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.chartOption{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+
+}
+/* #myChart{
+    height: 50%;
+    padding-top: 10%;
+} */
+textarea { height: auto; }
+
+.actions{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+}
+.search{
+    display: flex;
+    flex-flow: row;
+    width: 30%;
+    min-width: 200px
+}
+#searchInput{
+    width: 100%;
+}
+.icon{
+    max-width: 30px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.options{
+    display: flex;
+    flex-flow: row;
+    padding: 40px;
+    font-size: 20px;
+}
+.innerOption{
+    padding: 10px;  
+    cursor: pointer;
+}
+.selectetOption{
+    padding: 10px;  
+    cursor: pointer;
+    font-weight: bold;
+    color:#47B5FF;
+}
+.list{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+.line{
+    display: flex;
+    flex-flow: row;
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    margin-top: 15px;
+}
+.name{
+    padding: 10px;
+    width: 90%;
+}
+.edit{
+    padding: 10px;
+    max-width: 25px;
+    cursor: pointer;
+}
+.delete{
+    padding: 10px;
+    max-width: 25px;
+    cursor: pointer;
+}
+
+
+.addMovie{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    justify-content: center;
+    /* padding-bottom: 40px */
+}
+.title{
+    font-size: 36px;
+    text-align: center;
+}
+.displayRow{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+.addName{
+    margin: 10px;
+}
+.movieInput{
+    width: 100%;
+    max-height: 30px;
+    text-overflow: ellipsis;
+}
+.addBtn{
+    align-self: center;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: #0c59c5;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.addBtn:hover{
+    cursor: pointer;
+}
+
+
+div#chartContainer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bar {
+    fill: #47b5ff;
+  }
+  
+  text {
+    font-size: 12px;
+    fill: #fff;
+  }
+  
+  path {
+    stroke: gray;
+  }
+  
+  line {
+    stroke: gray;
+  }
+  
+  line#limit {
+    stroke: #FED966;
+    stroke-width: 3;
+    stroke-dasharray: 3 6;
+  }
+  
+  .grid path {
+    stroke-width: 0;
+  }
+  
+  .grid .tick line {
+    stroke: #9FAAAE;
+    stroke-opacity: 0.3;
+  }
+  
+  text.divergence {
+    font-size: 14px;
+    fill: #2F4A6D;
+  }
+  
+  text.value {
+    font-size: 14px;
+  }
+  
+  text.title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  text.label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  text.source {
+    font-size: 10px;
+  }
+
+  .editContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2e3d46;
+    padding: 30px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
+  }
+  .editData{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px 50px 50px 50px;
+    align-items: center;
+  }
+  .editTitle{
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .saveBtn{
+    cursor: pointer;
+    width: 30%;
+    color: #47b5df;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 30px;
+  }

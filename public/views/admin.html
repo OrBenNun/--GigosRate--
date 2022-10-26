@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script onload="console.log('here')" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="views/css/admin.css">
+    <script src="js/admin.js" ></script>
+    <script src="js/httpService.js"></script>
+    <script src="js/d3Charts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="statistics">
+        <div class="title">Statistics</div>
+        <div class="chartSelction">
+          <div id="userChartOption" onclick="changeChart(true)" class="selectedChartOption">Users Chart</div>
+          <div id="genreChartOption" onclick="changeChart(false)" class="chartOption">Genre Chart</div>
+        </div>
+        <div id="chartContainer">
+          <svg style="max-width: 1200px;"></svg>
+        </div>
+        <!-- <canvas id="myChart" ></canvas> -->
+      </div>
+      <div class="actions">
+        <div class="search">
+          <input id="searchInput" type="text" placeholder="Search.." name="search">
+          <img class="icon" onclick="search()" alt="searchIcon" src="img/searchIcon.png" />
+        </div>
+        <div class="options">
+          <div id="moviesOption" class="selectetOption" onclick="changeOnUsers(false)">
+            Movies
+          </div>
+          <div id="usersOption" class="innerOption" onclick="changeOnUsers(true)">
+            Users
+          </div>
+        </div>
+        <!-- <div class="editContainer">
+          <div class="editTitle">Edit</div>
+          <div class="editData">
+            <div class="addName"> Movie name:</div>
+            <input id="editmovieName" class="movieInput" type="text" placeholder="Movie name.." name="movieName">
+            <div class="addName">Description:</div>
+            <textarea rows="4" cols="40" id="editmovieDescription" type="text" placeholder="Movie description.." name="movieDescription" 
+            style="width: 100%;"></textarea>
+            <div class="addName">Locations:</div>
+            <input id="editlocations" class="movieInput" type="text" placeholder="Locations.." name="locations">
+            <div class="name">Duration:</div>
+            <input id="editduration" class="movieInput" type="text" placeholder="Duration.." name="duration">
+            <div class="addName">Trailer link:</div>
+            <input id="edittrailerLink" class="movieInput" type="text" placeholder="Trailer.." name="trailer">
+            <div class="addName">Img link:</div>
+            <input id="editimgLink" class="movieInput" type="text" placeholder="Img.." name="imgLink">
+            <div class="addName">Director:</div>
+            <input id="editdirector" class="movieInput" type="text" placeholder="Director.." name="director">
+            <div class="addName">Stars:</div>
+            <input id="editstars" class="movieInput" type="text" placeholder="Stars.." name="stars">
+            <div class="addName">Release year: </div>
+            <input id="editreleaseYear" class="movieInput" type="text" placeholder="Release year.." name="releaseYear">
+            <div class="addName">Genre </div>
+            <input id="editgenre" class="movieInput" type="text" placeholder="Genre.." name="genre">  
+          </div>
+          <div onclick="onSaveEdit()" class="saveBtn">
+            Save Changes
+          </div>
+        </div> -->
+        <div class="list">
+          <!-- <div class="line">
+            <div class="name"> user/movie name</div>
+            <img class="edit" src="img/editIcon.png"/>
+            <img class="delete" src="img/deleteIcon.png" />
+          </div> -->
+        </div>
+      </div>
+
+      <div class="addMovie">
+        <div class="title">Add a movie</div>
+        <div class="displayRow">
+          <div class="addName"> Movie name:</div>
+          <input id="movieName" class="movieInput" type="text" placeholder="Movie name.." name="movieName">
+        </div>
+        <div class="addName">Description:</div>
+        <textarea rows="4" cols="40" id="movieDescription" type="text" placeholder="Movie description.." name="movieDescription" 
+        style="width: 100%;"></textarea>
+
+        <div class="displayRow">
+          <div class="addName">Locations:</div>
+          <input id="locations" class="movieInput" type="text" placeholder="Locations.." name="locations">
+        </div>
+  
+        <div class="displayRow">
+          <div class="addName">Trailer link:</div>
+          <input id="trailerLink" class="movieInput" type="text" placeholder="Trailer.." name="trailer">
+        </div>
+
+        <div class="displayRow">
+          <div class="addName">Img link:</div>
+          <input id="imgLink" class="movieInput" type="text" placeholder="Img.." name="imgLink">
+        </div>
+
+        <div class="displayRow">
+          <div class="name">Duration:</div>
+          <input id="duration" class="movieInput" type="text" placeholder="Duration.." name="duration">
+        </div>
+
+        <div class="displayRow">
+          <div class="addName">Director:</div>
+          <input id="director" class="movieInput" type="text" placeholder="Director.." name="director">
+        </div>
+
+        <div class="displayRow">
+          <div class="addName">Stars:</div>
+          <input id="stars" class="movieInput" type="text" placeholder="Stars.." name="stars">
+        </div>
+
+        <div class="displayRow">
+          <div class="addName">Release year: </div>
+          <input id="releaseYear" class="movieInput" type="text" placeholder="Release year.." name="releaseYear">
+        </div>
+
+        <div class="displayRow">
+          <div class="addName">Genre </div>
+          <input id="genre" class="movieInput" type="text" placeholder="Genre.." name="genre">
+        </div>
+
+        <div class="addBtn" onclick="onAddMovie()">Add movie</div>
+      </div>
+    </div>
+  </body>
+</html>

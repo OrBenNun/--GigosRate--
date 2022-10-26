@@ -1,0 +1,14 @@
+{
+    "_id": "62f7999912153e6908110fd7",
+    "movieName": "Mickey Mouse",
+    "description": "blbla",
+    "locations": "[\"1\",\"2\"]",
+    "trailer": "http...",
+    "rate": "{\"user1\":3,\"user2\":4,\"totalRate\":3,\"gal\":\"2\"}",
+    "duration": "120",
+    "director": "Yanon",
+    "stars": "Gal Levy",
+    "img": "https://drive.google.com/uc?export=view&id=1dVMXPKMWUNdbbyCm4URBpstjvOWrlT7R",
+    "genre": "comedy",
+    "releaseYear": "2006"
+}

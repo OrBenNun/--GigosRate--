@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/fetch.js"></script>
+    <link rel="stylesheet" href="views/css/main.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    
+    <title>GigosRate</title>
+  <head>
+    <div id="HelloUser" class="headLine">
+
+    </div>
+    <div>
+      <p class="headLine" id="headLine">GigosRate - rate the best movies out there!</p>
+    </div>
+  </head>
+  <div id="body">
+    <div class="filter-bar">
+      <div class="custom-select">
+        <select id="genre" class="select" onchange="displaySorted()">
+          <option value="all genres">All genres</option>
+          <option value="action">Action</option>
+          <option value="drama">Drama</option>
+          <option value="comedy">Comedy</option>
+          <option value="animation">Animation</option>
+          <option value="biography">Biography</option>
+        </select>
+
+        <select id="year" class="select" onchange="displaySorted()">
+          <option value="all years">All the years</option>
+          <option value="2022">2022</option>
+          <option value="2020-2021">2020-2021</option>
+          <option value="2010-2019">2010-2019</option>
+          <option value="2000-2009">2000-2009</option>
+          <option value="1980-1999">1980-1999</option>
+        </select>
+
+        <button class="buttonSelect" onclick="topPicks()">Show top picks for you</button>
+        <button class="showAll" id="showAll">Show all movies</button>
+      </div>
+      <div>
+        <input id = "search" type="search" class="movie-search""  placeholder="enter movie name" >
+        <button id= "searchButton"class="searchButton" onclick="searchName()">Search</button>
+      </div>
+      </div>  
+    </div>
+    <div id = 'movieContent'>
+
+    </div>
+  </div>
+</html>

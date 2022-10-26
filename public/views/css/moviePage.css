@@ -1,0 +1,233 @@
+
+#movieName {
+    font-size: 55px;
+    padding-left: 1ch;
+    color: whitesmoke;
+    font-family: OCR A Std, monospace;
+}
+
+.leaveAcomment{
+    margin-left: 50%;
+    color:white;
+    font-size: medium;
+    flex-direction: row;
+    margin-top: 15%;
+    margin-right: 45%;
+    opacity: 0.9;
+}
+
+.leaveAcomment a i {
+    font-size: 36px;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin: 20%;
+    
+}
+
+.leaveAcomment a i:hover {
+    font-size: 48px;
+    color:whitesmoke;
+    transition: all 500ms;
+    margin-left: -10px;
+}
+
+.leaveAcomment .fa-facebook {
+    color: #1877f2;
+}
+
+.leaveAcomment .fa-twitter {
+    color: #1da1f2;
+}
+
+.leaveAcomment .fa-whatsapp {
+    color: #25d366;
+}
+
+.trailer,.image {
+  border-radius: 0%;
+  padding-left: 2%;
+}
+
+ .rating {
+    float:right;
+    font-size: xx-large;
+    position: sticky; 
+    z-index: 1000;
+    left: 0;
+    top: 80;
+    width: 8%;
+    height: 100%;
+    size: 45ch;
+} 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+  
+.tooltiptext {
+    visibility: hidden;
+    width: 30px;
+    background-color: rgb(74, 73, 73);
+    color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    border-radius: 6px;
+    padding: 1px 0;
+    font-size: xx-small;
+    position: static;
+    z-index: 1;
+    font-family: OCR A Std, monospace;
+    
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    text-align: right;
+    float: left;
+}
+
+#addToWatch {
+    border: none;
+    background:none;
+    font-size: 36px;
+    border-color: none;
+    color:  #da6f18b2;
+   text-shadow:5px 5px 5px black;
+   outline-color: black;
+   padding-top: 8%;
+}
+
+#addToWatch:hover {
+    background: none;
+    border-radius: 7%;
+    font-size: 48px; ;
+    color:whitesmoke;
+    transition: 500ms;
+}
+
+#rateTitle {
+   color:  #dabd18b2;
+   text-shadow:5px 5px 5px black;
+   text-align: center;
+   outline-color: black;
+}
+
+#rate {
+    color:  whitesmoke;
+    font-size: 36px;
+    font-family: OCR A Std, monospace;
+
+}
+
+.fa {
+    color: #dabd18b2;
+    font-size: 20px;
+    /* the stars next to movie name */
+}
+  
+.rating__star {
+ font-size: 20px;   
+ cursor: pointer;
+ color: #dabd18b2;
+}
+
+.rating__star:hover {
+    filter: drop-shadow(1px 1px 4px gold);
+ }
+
+.starsRating {
+    text-align: right;
+    font-size: 18px;
+}
+
+.scroll {
+  border: none;
+  background:none;
+  padding: none;
+  font-size: 36px;
+  cursor: pointer;
+  float: right;
+  padding-right: 3%;
+  text-align: center;
+  border-color: none;
+  color: black(13, 50, 88);
+}
+
+.scroll:hover {
+    background: none;
+    color: whitesmoke;
+    font-size: 48px;
+    transition: 500ms;
+}
+
+#movieData {
+    font-size: 0.5rem;
+    font-family: OCR A Std, monospace;
+    color:whitesmoke;
+    background-color: rgb(74, 73, 73);
+    opacity: 0.8;
+    padding: 0.2ch;
+    margin-bottom: 1%;
+    padding-left: 5ch;
+    width: 1020px;
+    opacity: 80%;
+}
+
+
+#map {
+    height: 380px;
+    width: 94%;
+    margin-left: 3%;
+    opacity: 80%;
+  }
+
+#map:hover {
+    opacity: 100%;
+    transition: 500ms;
+
+} 
+
+#mapTitle {
+    border-radius: 45px;
+    border: none;
+    background:none;
+    padding: none;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2%;
+    color: whitesmoke;
+}
+
+#image {
+    width:300px;
+    height: 420px;
+    margin-bottom: 2%;
+    border-radius: 10%;
+}
+
+#movie {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width:715px;
+    height: 420px;
+    max-width: 100%!important;
+    max-height:100%!important ;
+}
+
+#middle{
+    padding: 20px;  
+    background-color: #162032;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 2%;
+}
+
+

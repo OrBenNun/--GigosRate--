@@ -1,0 +1,84 @@
+1. authetication of the user - path: get http://localhost:8080/authenticateUsre , parameters:  userName and password.
+ return Json key: "isExist": value:false/true. V
+
+2. get user by userName path - get http://localhost:8080/user , parameters:  userName .
+ return Json of the user, if user is not exist return this Json {     key:"userName": value:"this user is not exist" }. V
+
+3. get first(movies) by num - path: get http://localhost:8080/firstMovies , parameters:  number of the firsts. V
+
+4. write/update rate to movie - path: post http://localhost:8080/rate , parameters:  movieName, userName, rate. V
+
+5. add movie path: post http://localhost:8080/addMovie , parameters:  user name, movieName, description, 
+locations, trailer,duration, director, stars, img, releaseYear, genre.
+ if the movie is already exist return res = "this movie is already exist", case that the user is not admin return none. V
+
+6 create user - path: post http://localhost:8080/signUp , parameters:  userName and password.
+isAdmin is false always if the user name is already exist return res = "this user name is not available". V
+
+7. get arr of all the movies - path: get http://localhost:8080/allMovies ,   parameters:  userName. V
+
+8. get watchList - path: post http://localhost:8080/addToWl , parameters:  movieName, userName. 
+if the movie is already exist in the watchList this func do nothing. V
+
+9. get movies by genre - path: get http://localhost:8080/moviesByGenre , parameters:  genre. 
+if dont find return empty arr. value
+
+10. get watch list by user name - path: get http://localhost:8080/watchList , parameters:  userName. if dont 
+find return empty arr. V
+
+11. get watch list by user name - path: get http://localhost:8080/movStatics , parameters:  none. if dont exist
+ movie in genre the res dont contain this genre. V
+
+12. get watch list by user name - path: get http://localhost:8080/userStatics , parameters:  none. this func return 
+json contains key:date value: count of how many users signs up at everyday last week 
+if at specific day there is 0 signs up this date will not be included at the response json. V
+
+13. remove movie by movieName - path: post http://localhost:8080/removeMovie ,   parameters:  userName ,movieName.
+the function remove the movie from movies and all the watch lists that includes this movie. V
+
+14. remove user by userName - path: post http://localhost:8080/removeUser , parameters:  adminName, toDelete .
+ adminName - is the user commit the act, toDelete - is the user that need to delete. V
+
+15. this path get name and return coordinate - path: get http://localhost:8080/country ,
+ parameters:  country .return json { 'lng':12, 'lat':-2 }. V  
+
+16. this path get parameters to search movies and return arr of movies
+ - path: get http://localhost:8080/searchMovie , parameters:  movieName, genre, startYear,
+  endYear. if the not exist return empty arr, else return arr of movies json. V  
+
+17. this path remove movie from watch list of user
+ - path: post http://localhost:8080/removeFromWl ,parameters:  movieName, userName.
+  if the movie is exist in the watchList this func remove him, else do nothing. V  
+
+18. this path update movie 
+- path: post http://localhost:8080/updateMovie , parameters:  user name, oldName, newName, description, locations, trailer,duration, director, stars, img,
+  releaseYear, genre. if the newName is already exist as another movieName return res = "new name is already exist", 
+  case that the user is not admin return res = "user is not admin", case that the oldName movie is not exist res = "movie dont exist"
+  case that succeed res = "update movie: newName". V 
+
+movieJson: 
+
+    {
+        "_id": "62f7999912153e6908110fd7",
+        "movieName": "Mickey Mouse",
+        "description": "blbla",
+        "locations": "[\"1\",\"2\"]",
+        "trailer": "http...",
+        "rate": "{\"user1\":3,\"user2\":4,\"totalRate\":3,\"gal\":\"2\"}",
+        "duration": "120",
+        "director": "Yanon",
+        "stars": "Gal Levy",
+        "img": "https://drive.google.com/uc?export=view&id=1dVMXPKMWUNdbbyCm4URBpstjvOWrlT7R",
+        "genre": "comedy",
+        "releaseYear": "2006"
+    }
+
+userJson:
+{
+    "userName": "JLO",
+    "password":"335455Fff",
+	"isAdmin": true,
+    "watchList" : ["blblaMovie",...],
+    "signupDate": "14/8/2022"
+}
+

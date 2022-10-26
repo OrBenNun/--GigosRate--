@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <!--css -->
+    <link rel="stylesheet" href="views/css/moviePage.css">
+    <script src="https://kit.fontawesome.com/4c974060b2.js" crossorigin="anonymous"></script>
+
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet"> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>moviePage</title>
+    <!-- js -->
+    <script src = "https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src = "/js/moviePage.js"></script>
+</head>
+<body>
+    <div class="title">
+        <span id="movieName"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span id="rate"></span>
+    </div>
+  
+    <div id="middle">
+        <img id="image">
+        <iframe id="movie" allowfullscreen style="border:none ;"></iframe>
+            
+        <div class="rating">
+            <div class="starsRating">
+                <h2 id="rateTitle">rate it</h2>
+                <span class="rating__star far fa-star"></span>
+                <span class="rating__star far fa-star"></span>
+                <span class="rating__star far fa-star"></span>
+                <span class="rating__star far fa-star"></span>
+                <span class="rating__star far fa-star"></span>
+            </div> 
+            <div class="leaveAcomment">
+                <a href="#" class="facebook-btn">
+                    <i class="fab fa-facebook"></i>
+                </a> 
+                <a href="#" class="twitter-btn">
+                    <i class="fab fa-twitter"></i>
+                </a> 
+                <a href="#" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                </a>                       
+            </div>
+            <div class="tooltip">
+                <button id="addToWatch" onclick="addToWatch()"><i class="fa-solid fa-list-check"></i></button>
+                <span class="tooltiptext">Add to watch list</span>
+            </div>
+        </div>
+        <div id = "movieData">
+            <h1>
+                <div id="duration"></div>
+                <div id ="description"></div>
+                <div id="director"> </div>
+                <div id="stars"></div>
+            </h1>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="insideMap">
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2MhSzwkJdU50VOmGdqaiyHAMIZ_y12ok&callback=initMap">      
+    </script>
+    </div>
+    
+
+    <div id="mapTitle"> <i class="fa-solid fa-map-location-dot"></i> Check out where this movie was filmed <i class="fa-solid fa-map-location-dot"></i> </div>
+    
+    <button onclick="scrollToTop()" class="scroll">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </button>
+</body>

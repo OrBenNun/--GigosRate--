@@ -1,0 +1,148 @@
+* {
+	margin: 0; padding: 0;
+}
+#wrapper {
+	width: 970px;
+	margin: auto auto;
+	text-align: left;
+	padding: 0 7px;
+}
+#NewsContent {
+	width: 666px;
+	float: left;
+}
+#NewsContent .post {
+	width: 259px; height: 420px;
+	float: left;
+	padding: 20px 15px 0 35px;
+}
+#NewsContent .post h2 {
+	font-family: Georgia;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+#content .post h2 a {
+	color: black;
+}
+#NewsContent .post .date {
+	font-size: 0.9em;
+	font-family: Georgia;
+	color: white;
+	margin-bottom: 15px;
+}
+#NewsContent .post .continue {
+	color: #ffffff;
+	background-color: #DC1000;
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	font-family: Georgia;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#NewsContent .post p {
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+#NewsContent .post .thumb {
+	height: px; /**/
+	overflow: hidden;
+	padding: 5px;
+	background-color: #EEEEEE;
+	border: 1px solid #E8E8E8;
+	margin-bottom: 10px;
+}
+#NewsContent .post .thumb div {
+	height: 92px;
+	overflow: hidden;
+}
+#NewsContent .post .thumb img {
+	width: 247px;
+}
+#NewsContent .postnav {
+	clear: both;
+	padding: 20px 34px 40px;
+}
+#NewsContent .postnav ul {
+	list-style-type: none;
+	border: 0;
+}
+#NewsContent .postnav ul li {
+	float: left;
+	padding: 2px;
+	padding: 2px;
+}
+#NewsContent .postnav ul li a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border: 0;
+	padding: 5px 8px;
+	background-color: #9F9F9F;
+	color: #ffffff;
+	font-family: Georgia;
+	font-weight: bold;
+}
+#NewsContent .postnav ul li a:hover {
+	background-color: #E05F00;
+	border: 0 !important;
+}
+#NewsContent .postnav ul li.next a {
+	width: auto;
+	padding: 2px 4px;
+}
+#NewsContent .postnav .page_info {
+	text-align: center;
+	text-decoration: none;
+	border: 0;
+	padding: 5px 8px;
+	background-color: #9F9F9F;
+	color: #ffffff;
+	font-family: Georgia;
+	font-weight: bold;
+	margin: 2px;
+}
+
+
+#sidebar {
+	width: 304px;
+	float: right;
+	padding-bottom: 20px;
+}
+#sidebar .wrapper {
+	padding: 0 15px;
+}
+#sidebar h2 {
+	color: black;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin: 15px 0 10px;
+}
+#sidebar ul {
+	list-style-type: none;
+}
+#sidebar ul li {
+	border-bottom: 1px dotted #DADADA;
+	line-height: 1.4em;
+	padding: 4px 0;
+	font-size: 0.9em;
+}
+#sidebar ul li a {
+	color: white;
+}
+#sidebar ul li a:hover {
+	color: #DC1000;
+}
+#sidebar .l {
+	float: left;
+	width: 125px;
+}
+#sidebar .r {
+	float: right;
+	width: 125px;
+}
+#sidebar .sbar li {
+	font-size: 1em;
+	padding-left: 12px;
+	border: 0;
+}
